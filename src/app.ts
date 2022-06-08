@@ -1,7 +1,7 @@
-import { inakanet } from "./scrape";
+import { inakanet } from "./scrape"
 
-const run = () => {
-    inakanet();
+const run = async () => {
+    await inakanet()
 }
 
-run();
+run()

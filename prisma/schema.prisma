@@ -10,21 +10,19 @@ datasource db {
     url      = env("DATABASE_URL")
 }
 
-model Website {
-    id    Int     @id @default(autoincrement())
-    title String  @db.VarChar(255)
-    url   String  @unique @db.VarChar(255)
-    House House[]
-}
-
 model House {
     id          Int      @id @default(autoincrement())
     url         String   @unique @db.VarChar(255)
-    title       String   @db.VarChar(255)
+    imageUrls   String[]
+    location    String?
+    plotSize    Int?
+    houseSize   Int?
     description String?
     createdAt   DateTime @default(now()) @db.Timestamp(6)
-    location    String?
     price       Int?
-    website     Website  @relation(fields: [websiteId], references: [id])
-    websiteId   Int
+    website     Website
+}
+
+enum Website {
+    INAKANET
 }
