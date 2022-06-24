@@ -6,6 +6,7 @@ import http from "http"
 import { load } from "cheerio"
 import parseJapaneseNumber from "../utils/parseJapaneseNumber"
 import extractNumbers from "../utils/extractNumbers"
+import { House, prisma } from "@akiya-scraper/prisma"
 
 interface Url {
     loc: string
@@ -18,8 +19,6 @@ const host = "www.inakanet.jp"
 const SITEMAP = `/sitemap.xml`
 const LISTING = `/cgi-bin/database/database.cgi`
 const IMG = `http://${host}/cgi-bin/database/`
-
-const prisma = new PrismaClient()
 
 const crawler = new Crawler({})
 
