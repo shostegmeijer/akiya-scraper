@@ -1,0 +1,26 @@
+{
+  "name": "akiya-scraper-api",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Sho Stegmeijer <sho@oberon.nl>",
+  "homepage": "https://github.com/shostegmeijer/akiya-scraper/tree/main/packages/akiya-scraper-api#readme",
+  "license": "ISC",
+  "main": "lib/akiya-scraper-api.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shostegmeijer/akiya-scraper.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/shostegmeijer/akiya-scraper/issues"
+  }
+}
