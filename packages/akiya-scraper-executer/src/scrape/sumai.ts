@@ -1,14 +1,8 @@
 import { bouncingBall } from "cli-spinners"
 import ora from "ora"
 import Crawler from "crawler"
-import { XMLParser } from "fast-xml-parser"
-import iconv from "iconv-lite"
-import https from "https"
-import { load } from "cheerio"
-import { House, PrismaClient } from "@prisma/client"
-import parseJapaneseNumber from "../utils/parseJapaneseNumber"
-import extractNumbers from "../utils/extractNumbers"
 import $ from "cheerio"
+import { PrismaClient } from "@prisma/client"
 
 const host = "akiya.sumai.biz"
 // const LISTING = `/archives/bukken/`
