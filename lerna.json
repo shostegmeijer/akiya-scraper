@@ -1,7 +1,18 @@
 {
-  "packages": [
-    "packages/*"
-  ],
-  "useNx": false,
-  "version": "0.0.0"
+    "packages": [
+        "packages/api/*",
+        "packages/scraper/*",
+        "packages/prisma/*",
+        "packages/ui/*"
+    ],
+    "useNx": false,
+    "version": "0.0.0",
+    "npmClient": "yarn",
+    "useWorkspaces": true,
+    "command": {
+        "publish": {
+            "conventionalCommits": true,
+            "yes": true
+        }
+    }
 }

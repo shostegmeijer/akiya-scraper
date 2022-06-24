@@ -1,23 +1,35 @@
 {
-  "name": "akiya-scraper",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shostegmeijer/akiya-scraper.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shostegmeijer/akiya-scraper/issues"
-  },
-  "homepage": "https://github.com/shostegmeijer/akiya-scraper#readme",
-  "devDependencies": {
-    "lerna": "^5.1.4"
-  },
-  "keywords": [],
-  "description": ""
+    "name": "@akiya-scraper/akiya-scraper",
+    "private": true,
+    "version": "1.0.0",
+    "main": "index.js",
+    "workspaces": {
+        "packages": [
+            "packages/api/*",
+            "packages/scraper/*",
+            "packages/prisma/*",
+            "packages/ui/*"
+        ]
+    },
+    "scripts": {
+        "bootstrap": "lerna bootstrap",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shostegmeijer/akiya-scraper.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/shostegmeijer/akiya-scraper/issues"
+    },
+    "homepage": "https://github.com/shostegmeijer/akiya-scraper#readme",
+    "devDependencies": {
+        "lerna": "^5.1.5",
+        "npm-run-all": "^4.1.5",
+        "typescript": "^3.7.5"
+    },
+    "keywords": [],
+    "description": ""
 }

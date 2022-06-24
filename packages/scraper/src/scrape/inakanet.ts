@@ -8,7 +8,6 @@ import { load } from "cheerio"
 import { House, PrismaClient } from "@prisma/client"
 import parseJapaneseNumber from "../utils/parseJapaneseNumber"
 import extractNumbers from "../utils/extractNumbers"
-import { promises } from "fs"
 
 interface Url {
     loc: string
@@ -192,13 +191,5 @@ const scrapeHouse = async (url: string) =>
             },
         })
     })
-
-const getSitemap = async () => {
-    const data = await fetch(SITEMAP)
-    const text = await data.text()
-    const parser = new XMLParser()
-    const xml: { urlset: { url: Url[] } } = parser.parse(text)
-    return xml.urlset.url
-}
 
 export default scrape
