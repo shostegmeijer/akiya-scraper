@@ -1,11 +1,5 @@
 {
-    "packages": [
-        "packages/api/*",
-        "packages/scraper/*",
-        "packages/prisma/*",
-        "packages/ui/*"
-    ],
-    "useNx": false,
+    "useNx": true,
     "version": "0.0.0",
     "npmClient": "yarn",
     "useWorkspaces": true,

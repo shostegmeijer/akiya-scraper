@@ -1,5 +1,6 @@
 {
     "name": "@akiya-scraper/prisma",
+    "private": true,
     "version": "0.0.0",
     "description": "> TODO: description",
     "author": "Sho Stegmeijer <sho@oberon.nl>",

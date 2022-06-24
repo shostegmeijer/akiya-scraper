@@ -1,5 +1,6 @@
 {
     "name": "@akiya-scraper/api",
+    "private": true,
     "version": "0.0.0",
     "description": "> TODO: description",
     "author": "Sho Stegmeijer <sho@oberon.nl>",
@@ -26,7 +27,6 @@
         "url": "https://github.com/shostegmeijer/akiya-scraper/issues"
     },
     "devDependencies": {
-        "eslint": "^8.18.0",
-        "typescript": "^4.7.4"
+        "eslint": "^8.18.0"
     }
 }

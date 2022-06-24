@@ -1,5 +1,6 @@
 {
     "name": "@akiya-scraper/scraper",
+    "private": true,
     "version": "0.0.0",
     "description": "> TODO: description",
     "author": "Sho Stegmeijer <sho@oberon.nl>",
@@ -28,6 +29,7 @@
         "url": "https://github.com/shostegmeijer/akiya-scraper/issues"
     },
     "dependencies": {
+        "@akiya-scraper/prisma": "^0.0.0",
         "axios": "^0.27.2",
         "chai": "^4.3.6",
         "chalk": "^4.1.2",
@@ -46,8 +48,6 @@
     "devDependencies": {
         "@types/crawler": "^1.2.2",
         "@types/iconv": "^3.0.1",
-        "@types/node": "^17.0.36",
-        "eslint": "^8.16.0",
-        "typescript": "^4.7.2"
+        "@types/node": "^17.0.36"
     }
 }
