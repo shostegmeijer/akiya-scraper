@@ -1,7 +1,9 @@
-import { inakanet } from "./scrape"
+import { inakanet, sumai } from "./scrape"
 
 const run = async () => {
-    await inakanet()
+    const { INAKANET, SUMAI } = process.env
+    INAKANET === "1" && (await inakanet())
+    SUMAI === "1" && (await sumai())
 }
 
 run()

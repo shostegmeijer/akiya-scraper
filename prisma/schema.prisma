@@ -25,4 +25,5 @@ model House {
 
 enum Website {
     INAKANET
+    SUMAI
 }

@@ -50,9 +50,9 @@ const getHousesUrls = async () => {
     const firstPage = load(await getListing())
     const total = parseInt(firstPage(".style1").first().text())
     // get all pages
-    const totalPages = total / 50
+    const totalPages = Math.ceil(total / 50)
     let pages = [firstPage]
-    for (let i = 2; i <= totalPages - 1; i++) {
+    for (let i = 2; i <= totalPages; i++) {
         pages = [...pages, load(await getListing(i))]
     }
 
@@ -135,11 +135,7 @@ const scrapeHouse = async (url: string) =>
     new Promise<House>((resolve) => {
         crawler.queue({
             url,
-            callback: async (
-                error: Error,
-                res: Crawler.CrawlerRequestResponse,
-                done: () => void
-            ) => {
+            callback: async (error, res, done) => {
                 if (error) {
                     console.log(error)
                     done()
